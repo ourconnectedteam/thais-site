@@ -24,7 +24,7 @@ export default function ServicesSection() {
         <section className="py-20 md:py-32 bg-muted/30">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-16 space-y-4">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Como Posso Ajudar</h2>
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"><span className="text-gold">Como Posso Ajudar</span></h2>
                     <p className="max-w-[700px] mx-auto text-muted-foreground text-lg">
                         Programas personalizados projetados para atender às demandas específicas da alta liderança.
                     </p>

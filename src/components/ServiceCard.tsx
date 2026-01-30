@@ -10,9 +10,9 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ title, description, icon }: ServiceCardProps) {
     return (
-        <Card className="group relative overflow-hidden border-border/50 bg-card hover:bg-muted/50 transition-colors">
+        <Card className="group relative overflow-hidden bg-card border-border/50 hover:border-primary/50 shadow-sm hover:shadow-lg transition-all duration-500">
             <CardHeader>
-                <div className="mb-4 inline-block rounded-lg bg-primary/10 p-3 text-primary">
+                <div className="mb-4 inline-block rounded-lg bg-primary/10 p-3 text-primary dark:bg-blue-500/10 dark:text-blue-400">
                     {icon}
                 </div>
                 <CardTitle className="text-xl font-bold">{title}</CardTitle>

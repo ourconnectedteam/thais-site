@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="container mx-auto px-4 py-12 md:px-6 lg:py-16">
                 <div className="grid gap-8 md:grid-cols-3">
                     <div>
-                        <h3 className="text-lg font-semibold text-primary mb-4">Thais Lapolla</h3>
+                        <h3 className="text-lg font-semibold text-gold mb-4">Thais Lapolla</h3>
                         <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
                             Coaching de Inglês Executivo para líderes que buscam clareza, confiança e impacto em ambientes de alta pressão.
                         </p>
@@ -16,17 +16,17 @@ export default function Footer() {
                         <h3 className="text-sm font-semibold mb-4 uppercase tracking-wider text-muted-foreground">Links Rápidos</h3>
                         <ul className="space-y-3">
                             <li>
-                                <Link href="/about" className="text-sm text-foreground/80 hover:text-primary transition-colors">
+                                <Link href="/about" className="text-sm text-foreground/80 hover:text-[#d4af37] transition-colors">
                                     Sobre Mim
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/services" className="text-sm text-foreground/80 hover:text-primary transition-colors">
+                                <Link href="/services" className="text-sm text-foreground/80 hover:text-[#d4af37] transition-colors">
                                     Serviços
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact" className="text-sm text-foreground/80 hover:text-primary transition-colors">
+                                <Link href="/contact" className="text-sm text-foreground/80 hover:text-[#d4af37] transition-colors">
                                     Contato
                                 </Link>
                             </li>
@@ -39,14 +39,14 @@ export default function Footer() {
                                 href="https://linkedin.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-muted-foreground hover:text-primary transition-colors"
+                                className="text-muted-foreground hover:text-[#d4af37] transition-colors"
                             >
                                 <Linkedin className="h-5 w-5" />
                                 <span className="sr-only">LinkedIn</span>
                             </a>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                            <a href="mailto:contact@thaislapolla.com" className="hover:text-primary transition-colors">
+                            <a href="mailto:contact@thaislapolla.com" className="hover:text-[#d4af37] transition-colors">
                                 contact@thaislapolla.com
                             </a>
                         </p>

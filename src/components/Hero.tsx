@@ -10,14 +10,14 @@ export default function Hero() {
                         <div className="space-y-4">
                             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-7xl/none text-foreground">
                                 Fale com clareza. <br />
-                                <span className="text-primary">Lidere com confiança.</span>
+                                <span className="text-primary dark:text-blue-400">Lidere com confiança.</span>
                             </h1>
                             <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl leading-relaxed">
                                 Coaching de Inglês Executivo Premium para profissionais que buscam comunicação persuasiva e natural em ambientes decisivos.
                             </p>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Button asChild size="lg" className="text-lg px-8 py-6 rounded-full shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all">
+                            <Button asChild size="lg" className="text-lg px-8 py-6 rounded-full shadow-lg hover:scale-[1.02] transition-all bg-primary text-primary-foreground hover:bg-primary/90 dark:bg-blue-500 dark:hover:bg-blue-600 border-none">
                                 <Link href="/contact">Agendar Chamada</Link>
                             </Button>
                             <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 rounded-full border-2 hover:bg-muted">

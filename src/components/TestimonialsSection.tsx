@@ -27,15 +27,15 @@ export default function TestimonialsSection() {
         <section className="py-20 md:py-32 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-16">
-                    Palavras de Líderes
+                    <span className="text-gold">Palavras de Líderes</span>
                 </h2>
                 <div className="grid gap-8 md:grid-cols-3">
                     {testimonials.map((t, i) => (
-                        <Card key={i} className="bg-muted/10 border-none shadow-sm">
+                        <Card key={i} className="bg-muted/10 border-[#d4af37]/20 shadow-sm hover:border-[#d4af37]/60 hover:shadow-[0_0_20px_rgba(212,175,55,0.15)] transition-all duration-300">
                             <CardContent className="pt-6">
                                 <div className="flex gap-4 mb-4">
                                     <Avatar className="h-10 w-10">
-                                        <AvatarFallback className="bg-primary/10 text-primary">{t.initials}</AvatarFallback>
+                                        <AvatarFallback className="bg-[#d4af37]/10 text-[#d4af37]">{t.initials}</AvatarFallback>
                                     </Avatar>
                                     <div>
                                         <p className="text-sm font-semibold">{t.author}</p>

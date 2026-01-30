@@ -13,7 +13,7 @@ export default function AboutSnippet() {
                     Meu coaching vai além da gramática — trata-se de dominar a sala, articular ideias complexas com precisão
                     e liderar com confiança autêntica em qualquer ambiente de língua inglesa.
                 </p>
-                <Button asChild variant="link" className="text-lg text-primary underline-offset-4">
+                <Button asChild variant="link" className="text-lg text-primary underline-offset-4 hover:text-primary/80 dark:text-blue-400 dark:hover:text-blue-300">
                     <Link href="/about">Leia mais sobre minha abordagem &rarr;</Link>
                 </Button>
             </div>

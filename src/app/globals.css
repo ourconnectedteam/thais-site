@@ -55,7 +55,10 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: #1F253C;
+  /* Navy Blue */
   --primary-foreground: oklch(0.985 0 0);
+  --accent-blue: #38bdf8;
+  /* Sky 400 */
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
@@ -79,6 +82,20 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  /* Metallic Gold System */
+  --gold-1: #6b4e16;
+  /* Dark Bronze */
+  --gold-2: #caa24a;
+  /* Medium Gold */
+  --gold-3: #f5e6a8;
+  /* Light Gold (Highlight) */
+  --gold-4: #d4af37;
+  /* Classic Gold */
+  --gold-5: #b8860b;
+  /* Dark Goldenrod */
+
+  --gold-gradient: linear-gradient(135deg, var(--gold-1) 0%, var(--gold-2) 18%, var(--gold-3) 35%, var(--gold-4) 52%, var(--gold-5) 70%, var(--gold-3) 85%, var(--gold-1) 100%);
+  --gold-text-gradient: linear-gradient(to right, #B8860B 0%, #E6C200 25%, #F5E6A8 50%, #D4AF37 75%, #AA7700 100%);
 }
 
 .dark {
@@ -88,8 +105,10 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: #000000;
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.65 0.15 260);
-  --primary-foreground: oklch(0.985 0 0);
+  --primary: #38bdf8;
+  /* Light Blue for Dark Mode */
+  --primary-foreground: #0f172a;
+  /* Slate 900 */
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
@@ -117,10 +136,49 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border/50 outline-ring/50;
   }
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    background: var(--gold-text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+
+  .border-gold {
+    border: 1px solid transparent;
+    border-image: var(--gold-gradient) 1;
+  }
+
+  /* Alternative golden border that respects rounded corners better if needed */
+  .border-gold-rounded {
+    position: relative;
+    background: linear-gradient(var(--background), var(--background)) padding-box,
+      var(--gold-gradient) border-box;
+    border: 1px solid transparent;
+  }
+
+  .bg-gold-subtle {
+    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+  }
+
+  .gold-divider {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    opacity: 0.5;
+  }
+
+  .hover-gold-glow:hover {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    border-color: #d4af37;
   }
 }

@@ -232,7 +232,7 @@ function ServiceCategoryBlock({ category, isReversed }: { category: ServiceCateg
                                         <p className="text-muted-foreground mb-6 leading-relaxed max-w-lg">
                                             {item.description}
                                         </p>
-                                        <Button asChild size="sm" variant="outline" className="group border-primary/20 hover:border-primary/50 text-foreground">
+                                        <Button asChild size="sm" variant="outline" className="group border-[#d4af37]/20 hover:border-[#d4af37]/60 hover:shadow-[0_0_20px_rgba(212,175,55,0.15)] bg-background text-foreground transition-all duration-300">
                                             <a href={item.href}>
                                                 {item.ctaLabel} <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                             </a>

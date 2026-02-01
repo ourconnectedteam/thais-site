@@ -40,7 +40,7 @@ const serviceCategories: ServiceCategory[] = [
             {
                 id: "interview-prep",
                 title: "Preparatório para Entrevista em Inglês",
-                description: "Preparação estratégica para entrevistas decisivas. Pratique responder a perguntas comportamentais com confiança.",
+                description: "Curso completo para você dar o próximo passo na sua carreira.",
                 ctaLabel: "Agendar Agora",
                 href: "/contact?service=interview-prep",
                 imageColor: "bg-purple-500/10",
@@ -48,7 +48,7 @@ const serviceCategories: ServiceCategory[] = [
             {
                 id: "cv-translation",
                 title: "Tradução de CV",
-                description: "Tradução profissional para destacar seu valor globalmente. Garanta que seu CV localizado ressoe com recrutadores internacionais.",
+                description: "Versão estratégica do seu currículo para que chegue nas mãos certas.",
                 ctaLabel: "Obter Orçamento",
                 href: "/contact?service=cv-translation",
                 imageColor: "bg-rose-500/10",
@@ -56,7 +56,7 @@ const serviceCategories: ServiceCategory[] = [
             {
                 id: "personal-coaching",
                 title: "Coaching Pessoal",
-                description: "Desenvolvimento linguístico holístico para crescimento pessoal. Integre o inglês em sua vida diária perfeitamente.",
+                description: "Preparatório personalizado para a sua entrevista em inglês.",
                 ctaLabel: "Iniciar Jornada",
                 href: "/contact?service=personal-coaching",
                 imageColor: "bg-emerald-500/10",
@@ -71,7 +71,7 @@ const serviceCategories: ServiceCategory[] = [
             {
                 id: "business-english",
                 title: "Inglês para Negócios Expresso",
-                description: "Aquisição rápida de habilidades para necessidades urgentes de negócios. Foco em reuniões, negociações e redação eficaz de e-mails.",
+                description: "Um programa direto ao ponto para profissionais que já falam inglês, mas precisam usar melhor o que sabem.",
                 ctaLabel: "Começar",
                 href: "/contact?service=business-english",
                 imageColor: "bg-blue-500/10",
@@ -94,7 +94,7 @@ const serviceCategories: ServiceCategory[] = [
             {
                 id: "ttl-club",
                 title: "Conversação - TTL Community Club",
-                description: "Prática contínua e networking com pares. Junte-se a uma comunidade vibrante de profissionais fortalecendo suas habilidades juntos.",
+                description: "Um clube de conversação em inglês para quem já saiu do básico e quer praticar de maneira leve.",
                 ctaLabel: "Entrar no Clube",
                 href: "/contact?service=ttl-club",
                 imageColor: "bg-cyan-500/10",
@@ -102,7 +102,7 @@ const serviceCategories: ServiceCategory[] = [
             {
                 id: "next-chapter",
                 title: "The Next Chapter Club - by invitation only",
-                description: "Clube do livro e discussões avançadas para aprendizes contínuos. Conversas intelectuais claras sobre tópicos diversos.",
+                description: "Um clube de conversas em inglês para quem valoriza profundidade, repertório e trocas de alto nível.",
                 ctaLabel: "Entrar na Discussão",
                 href: "/contact?service=next-chapter",
                 imageColor: "bg-sky-500/10",
@@ -110,7 +110,7 @@ const serviceCategories: ServiceCategory[] = [
             {
                 id: "accent-training",
                 title: "Inglês Americano na Prática - Accent Training",
-                description: "Refine sua pronúncia para uma comunicação clara e autoritária. Domine as nuances da entonação do inglês americano.",
+                description: "Treinamento de pronúncia para profissionais que querem soar mais naturais em inglês americano.",
                 ctaLabel: "Saiba Mais",
                 href: "/contact?service=accent-training",
                 imageColor: "bg-indigo-500/10",
@@ -125,7 +125,7 @@ const serviceCategories: ServiceCategory[] = [
             {
                 id: "travel-english",
                 title: "Inglês para Viagens",
-                description: "Vocabulário e cenários essenciais para viagens internacionais. Peça comida, navegue em aeroportos e socialize com facilidade.",
+                description: "Inglês prático para viajar com mais autonomia, segurança e tranquilidade.",
                 ctaLabel: "Explorar",
                 href: "/contact?service=travel-english",
                 imageColor: "bg-teal-500/10",

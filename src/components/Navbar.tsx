@@ -12,8 +12,8 @@ export default function Navbar() {
 
     const navLinks = [
         { name: "Sobre", href: "/about" },
-        { name: "Serviços", href: "/services" },
-        { name: "Teste de Nível", href: "/test-level" },
+        { name: "Soluções", href: "/services" },
+        { name: "Teste seu Inglês", href: "/test-level" },
     ];
 
     return (

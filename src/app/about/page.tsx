@@ -4,6 +4,7 @@ import CTASection from "@/components/CTASection";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import AboutVisual from "@/components/AboutVisual";
 
 export const metadata = {
     title: "About | Thais Lapolla",
@@ -15,101 +16,85 @@ export default function AboutPage() {
         <div className="flex min-h-screen flex-col overflow-x-hidden bg-background">
             <Navbar />
             <main className="flex-1">
-                {/* Container for the Hero Card */}
-                <div className="container mx-auto px-4 md:px-6 py-6 h-full">
-                    <section className="relative w-full min-h-[85vh] rounded-[3rem] overflow-hidden flex flex-col justify-between shadow-sm border border-border/50">
+                <AboutVisual />
 
-                        {/* 1. Full Background Image */}
-                        <div className="absolute inset-0 z-0">
-                            <Image
-                                src="/about-portrait.png"
-                                alt="Empowering Confidence"
-                                fill
-                                className="object-cover object-center"
-                                priority
-                            />
-                            {/* Optional Gradient Overlay for Text Readability - subtle */}
-                            <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-white/40" />
-                        </div>
-
-                        {/* 2. Content Grid */}
-                        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 h-full flex-grow p-8 lg:p-16">
-
-                            {/* Left Headline */}
-                            <div className="lg:col-span-6 flex flex-col justify-start pt-12 lg:pt-0">
-                                {/* Static text-black to persist across themes */}
-                                <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-wide text-black leading-[1.1] drop-shadow-sm">
-                                    Empoderando <br />
-                                    Confiança <br />
-                                    Em Todo Lugar
-                                </h1>
-                            </div>
-
-                            {/* Spacer for Center */}
-                            <div className="lg:col-span-2"></div>
-
-                            {/* Right Subtitle + Button */}
-                            <div className="lg:col-span-4 flex flex-col justify-center items-start lg:items-end text-left lg:text-right pb-24 lg:pb-0">
-                                <div className="max-w-xs backdrop-blur-sm bg-white/30 p-6 rounded-3xl border border-white/40 shadow-sm">
-                                    <p className="text-lg text-stone-800 mb-6 font-medium leading-relaxed">
-                                        Um mercado global para artistas exibirem, compartilharem e venderem seu trabalho para o mundo.
-                                    </p>
-                                    {/* Hardcoded black button for consistency */}
-                                    <Button asChild className="rounded-full bg-black text-white hover:bg-black/80 px-8 py-6 text-base font-semibold shadow-lg w-full md:w-auto">
-                                        <Link href="/contact">Explorar Oportunidades</Link>
-                                    </Button>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* 3. "About Me" Text (Bottom Layer - Smaller, Thinner, Left Aligned) */}
-                        <div className="absolute bottom-0 left-0 w-full flex justify-start pl-8 md:pl-16 z-20 pointer-events-none mix-blend-darken">
-                            {/* Static text-black to persist across themes */}
-                            <span className="text-[13vw] leading-[0.8] font-light text-black/90 tracking-tighter select-none pb-4 lg:pb-8">
-                                Sobre Mim
-                            </span>
-                        </div>
-
-                    </section>
-                </div>
-
-                {/* Story / Values Section - Preserved spacing */}
-                <section className="py-20 md:py-32 bg-background">
+                {/* Story / Values Section - Premium Layout */}
+                <section className="py-24 bg-background relative overflow-hidden">
                     <div className="container mx-auto px-4 md:px-6">
-                        <div className="grid lg:grid-cols-2 gap-16 items-start">
-                            <div>
-                                <h2 className="text-4xl font-bold tracking-tight mb-6">
-                                    Superando a barreira entre <span className="text-primary">fluência</span> e <span className="text-primary">influência</span>.
+                        <div className="grid lg:grid-cols-12 gap-16 items-start">
+                            {/* Bio Content - Spans 7 cols */}
+                            <div className="lg:col-span-7">
+                                <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8 leading-tight">
+                                    Líderes não se destacam pelo que sabem. E sim, por <span className="text-gold">como se comunicam</span>.
                                 </h2>
-                                <div className="prose prose-lg dark:prose-invert text-muted-foreground">
+                                <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                                     <p>
-                                        Sou Thais Lapolla, uma coach de inglês executivo dedicada a ajudar profissionais a dominar o ambiente.
-                                        Com anos de experiência trabalhando com executivos C-suite, diplomatas e empreendedores, entendo que nos níveis mais altos,
-                                        a comunicação não é apenas sobre vocabulário — é sobre estratégia, tom e presença.
+                                        A forma como você comunica define o alcance da sua <span className="text-foreground font-medium">liderança</span>. <span className="text-foreground font-medium">Thais Lapolla</span> é especialista em inglês estratégico para executivos que atuam em esferas globais. Há mais de três décadas, <span className="text-gold font-medium">transforma fluência em influência real</span>, alinhando linguagem, posicionamento e responsabilidade em ambientes de alta complexidade. Fluente em cinco idiomas, já viveu em três países e construiu sua trajetória unindo <span className="text-foreground font-medium">expertise em idiomas à experiência prática em multinacionais americanas</span>, consolidando inteligência intercultural e a capacidade de transitar com naturalidade entre diferentes contextos e níveis de decisão.
                                     </p>
                                     <p>
-                                        Minha abordagem combina precisão linguística com psicologia comportamental. Eu não ensino apenas "Inglês para Negócios";
-                                        eu treino você para navegar em negociações complexas e articular sua visão com uma clareza que inspira ação.
+                                        Sua abordagem precisa transforma <span className="text-foreground font-medium">líderes</span> em <span className="text-foreground font-medium">comunicadores estratégicos</span>, capazes de influenciar com <span className="text-foreground font-medium">precisão e autoridade</span>. Thais acredita que comunicação não é sobre talento, e sim sobre <span className="text-gold font-medium">estratégia</span>. E que, com a orientação certa, qualquer profissional pode ir além. <span className="text-foreground font-medium">É exatamente para isso que ela está aqui.</span>
                                     </p>
                                 </div>
-                                <div className="mt-8">
-                                    <Button asChild variant="outline" size="lg" className="rounded-full">
-                                        <Link href="/contact">Ler Bio Completa</Link>
+                                <div className="mt-10">
+                                    <Button asChild size="lg" className="rounded-full px-8 py-6 text-lg shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300">
+                                        <Link href="/contact">Agendar Consultoria</Link>
                                     </Button>
                                 </div>
                             </div>
 
-                            {/* Stats / Credentials Grid */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            {/* Stats - Premium Vertical/Grid Layout - Spans 5 cols */}
+                            <div className="lg:col-span-5 space-y-8">
+                                <div className="grid grid-cols-1 gap-px bg-gradient-to-b from-border/50 via-border/30 to-border/0 rounded-3xl overflow-hidden border border-border/40 shadow-sm">
+                                    {[
+                                        { label: "Anos de Experiência", value: "30+" },
+                                        { label: "Líderes Treinados", value: "1000+" },
+                                        { label: "Países Atendidos", value: "15" },
+                                        { label: "Soluções Customizadas", value: "100%" }
+                                    ].map((stat, i) => (
+                                        <div key={i} className="bg-card/50 backdrop-blur-sm p-8 flex flex-row items-center justify-between gap-4 hover:bg-card transition-colors duration-300 group">
+                                            <span className="text-sm font-semibold tracking-wider text-muted-foreground uppercase group-hover:text-foreground transition-colors">{stat.label}</span>
+                                            <span className="text-5xl font-bold text-gold tabular-nums tracking-tight drop-shadow-sm">{stat.value}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Integrated Testimonials - Premium Flow */}
+                        <div className="mt-32">
+                            <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center">
+                                O impacto da <span className="text-gold">comunicação estratégica</span>
+                            </h3>
+                            <div className="grid md:grid-cols-3 gap-8">
                                 {[
-                                    { label: "Anos de Experiência", value: "10+" },
-                                    { label: "Executivos Treinados", value: "500+" },
-                                    { label: "Países Atendidos", value: "15" },
-                                    { label: "Satisfação do Cliente", value: "100%" }
-                                ].map((stat, i) => (
-                                    <div key={i} className="p-8 rounded-2xl bg-muted/30 border border-border/50 flex flex-col items-center text-center justify-center hover:bg-muted/50 transition-colors">
-                                        <span className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.value}</span>
-                                        <span className="text-sm font-medium text-muted-foreground uppercase tracking-wide">{stat.label}</span>
+                                    {
+                                        quote: "A Thais transformou completamente como me apresento ao conselho. Sinto-me no controle e compreendida.",
+                                        author: "Sofia M.",
+                                        role: "VP de Operações"
+                                    },
+                                    {
+                                        quote: "A nuance que ela ensina era o que faltava no meu inglês. Não é apenas sobre estar correto; é sobre ser eficaz.",
+                                        author: "Carlos R.",
+                                        role: "Fundador, Tech Startup"
+                                    },
+                                    {
+                                        quote: "O coaching dela me deu confiança para liderar negociações internacionais sem duvidar das minhas palavras.",
+                                        author: "Elena B.",
+                                        role: "Diretora de Vendas"
+                                    }
+                                ].map((t, i) => (
+                                    <div key={i} className="relative group">
+                                        <div className="absolute inset-0 bg-gold/5 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                        <div className="relative bg-card border border-border/50 rounded-2xl p-8 hover:border-gold/30 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md">
+                                            <div className="mb-6 text-gold text-4xl leading-none font-serif opacity-50">"</div>
+                                            <p className="text-muted-foreground italic mb-6 leading-relaxed flex-1">
+                                                {t.quote}
+                                            </p>
+                                            <div className="border-t border-border/50 pt-4">
+                                                <p className="font-semibold text-foreground">{t.author}</p>
+                                                <p className="text-xs text-gold font-medium uppercase tracking-wider">{t.role}</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 ))}
                             </div>

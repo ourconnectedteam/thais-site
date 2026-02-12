@@ -9,19 +9,19 @@ export default function Hero() {
                     <div className="flex flex-col justify-center space-y-8 animate-in fade-in slide-in-from-bottom-6 duration-1000">
                         <div className="space-y-4">
                             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-7xl/none text-foreground">
-                                Fale com clareza. <br />
-                                <span className="text-primary dark:text-blue-400">Lidere com confiança.</span>
+                                Comunique-se com <span className="text-gold">intenção</span>. <br />
+                                Lidere com <span className="text-gold">autoridade</span>.
                             </h1>
                             <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl leading-relaxed">
-                                Coaching de Inglês Executivo Premium para profissionais que buscam comunicação persuasiva e natural em ambientes decisivos.
+                                Inglês estratégico para líderes
                             </p>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Button asChild size="lg" className="text-lg px-8 py-6 rounded-full shadow-lg hover:scale-[1.02] transition-all bg-primary text-primary-foreground hover:bg-primary/90 dark:bg-blue-500 dark:hover:bg-blue-600 border-none">
-                                <Link href="/contact">Agendar Chamada</Link>
+                                <Link href="/contact">Fale conosco</Link>
                             </Button>
                             <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 rounded-full border-2 hover:bg-muted">
-                                <Link href="/services">Ver Serviços</Link>
+                                <Link href="/services">Soluções</Link>
                             </Button>
                         </div>
                     </div>

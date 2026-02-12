@@ -22,12 +22,12 @@ export default function ContactPage() {
                         {/* Left Side: Content */}
                         <div className="space-y-8 animate-in fade-in slide-in-from-left-8 duration-700">
                             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-muted/50 text-xs font-medium uppercase tracking-wider backdrop-blur-sm border border-border">
-                                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                                <span className="w-2 h-2 rounded-full bg-[#C6A84A] animate-pulse" />
                                 <span>Aceitando Novos Clientes</span>
                             </div>
 
                             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight text-foreground">
-                                Estamos aqui <br /> para <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">ajudar.</span>
+                                Estamos aqui <br /> para <span className="text-gold">ajudar.</span>
                             </h1>
 
                             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
@@ -36,15 +36,15 @@ export default function ContactPage() {
 
                             <div className="space-y-4 pt-4">
                                 <div className="flex items-center space-x-3 text-foreground/80">
-                                    <CheckCircle2 className="w-5 h-5 text-emerald-500" />
+                                    <CheckCircle2 className="w-5 h-5 text-[#C6A84A]" />
                                     <span>Estratégia de Coaching Executivo</span>
                                 </div>
                                 <div className="flex items-center space-x-3 text-foreground/80">
-                                    <CheckCircle2 className="w-5 h-5 text-emerald-500" />
+                                    <CheckCircle2 className="w-5 h-5 text-[#C6A84A]" />
                                     <span>Auditorias de Comunicação Corporativa</span>
                                 </div>
                                 <div className="flex items-center space-x-3 text-foreground/80">
-                                    <Mail className="w-5 h-5 text-emerald-500" />
+                                    <Mail className="w-5 h-5 text-[#C6A84A]" />
                                     <span>contact@thaislapolla.com</span>
                                 </div>
                             </div>

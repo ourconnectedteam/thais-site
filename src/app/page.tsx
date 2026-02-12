@@ -1,8 +1,7 @@
 import Hero from "@/components/Hero";
 import CredibilityBar from "@/components/CredibilityBar";
-import AboutSnippet from "@/components/AboutSnippet";
+import BioStatsSection from "@/components/BioStatsSection";
 import ServicesSection from "@/components/ServicesSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -14,9 +13,8 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <CredibilityBar />
-        <AboutSnippet />
+        <BioStatsSection />
         <ServicesSection />
-        <TestimonialsSection />
         <CTASection />
       </main>
       <Footer />

@@ -162,7 +162,7 @@ export default function ServicesPage() {
                             </div>
 
                             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 pb-2">
-                                Nossos Serviços
+                                Nossas Soluções
                             </h1>
 
                             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">

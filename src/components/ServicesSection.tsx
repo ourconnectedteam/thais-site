@@ -27,7 +27,7 @@ export default function ServicesSection() {
             title: "Além da Fluência",
             description: (
                 <>
-                    <p className="font-semibold">Fluência é precisão sob pressão.</p>
+                    <p className="font-semibold">Comunicação estratégica.</p>
                     <p className="mt-3">Seja para ampliar repertório, desenvolver clareza no discurso ou refinar a pronúncia, a sua jornada começa aqui.</p>
                 </>
             ),

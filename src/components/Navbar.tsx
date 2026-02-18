@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { ModeToggle } from "@/components/mode-toggle";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -37,7 +36,6 @@ export default function Navbar() {
                     <Button asChild size="sm" className="shadow-md transition-all">
                         <Link href="/contact">Contato</Link>
                     </Button>
-                    <ModeToggle />
                 </div>
 
                 {/* Mobile Nav */}

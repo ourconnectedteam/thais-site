@@ -7,8 +7,8 @@ export default function ServicesSection() {
             title: "Transição de Carreira",
             description: (
                 <>
-                    <p>Para líderes em movimento. Entrevista marcada ou não, preparação é antecipação estratégica.</p>
-                    <p className="mt-3">O inglês deve impulsionar sua próxima decisão, nunca limitar seu avanço.</p>
+                    <p className="font-semibold">Para líderes em movimento.</p>
+                    <p className="mt-3">Entrevista marcada ou não, preparação é antecipação estratégica. O inglês deve impulsionar sua próxima decisão, nunca limitar seu avanço.</p>
                 </>
             ),
             icon: <Briefcase className="h-6 w-6" />,
@@ -17,8 +17,8 @@ export default function ServicesSection() {
             title: "Business English",
             description: (
                 <>
-                    <p>Você opera em ambientes globais e não tem tempo a perder. Sua comunicação precisa refletir segurança, autoridade e clareza.</p>
-                    <p className="mt-3">Performance consistente não é opcional.</p>
+                    <p className="font-semibold">Você não tem tempo a perder.</p>
+                    <p className="mt-3">Você opera em ambientes globais e sua comunicação precisa refletir segurança, autoridade e clareza. Consistência não é opcional.</p>
                 </>
             ),
             icon: <Globe className="h-6 w-6" />,
@@ -27,7 +27,7 @@ export default function ServicesSection() {
             title: "Além da Fluência",
             description: (
                 <>
-                    <p>Fluência é precisão sob pressão.</p>
+                    <p className="font-semibold">Fluência é precisão sob pressão.</p>
                     <p className="mt-3">Seja para ampliar repertório, desenvolver clareza no discurso ou refinar a pronúncia, a sua jornada começa aqui.</p>
                 </>
             ),
@@ -37,7 +37,7 @@ export default function ServicesSection() {
             title: "What's Next?",
             description: (
                 <>
-                    <p>Você quer ir mais longe.</p>
+                    <p className="font-semibold">Você quer ir mais longe.</p>
                     <p className="mt-3">Desafios direcionados e programas estratégicos mantêm seu inglês vivo, relevante e alinhado à sua ambição profissional.</p>
                 </>
             ),

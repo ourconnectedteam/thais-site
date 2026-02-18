@@ -148,16 +148,16 @@ export default function ServicesPage() {
             <Navbar />
             <main className="flex-1">
                 {/* Header Section */}
-                <section className="relative py-24 lg:py-32 overflow-hidden">
+                <section className="relative py-24 lg:py-32 overflow-hidden bg-primary">
                     {/* Background Glows */}
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] h-[500px] bg-primary/5 rounded-full blur-[120px] -z-10 pointer-events-none" />
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] h-[500px] bg-white/5 rounded-full blur-[120px] -z-10 pointer-events-none" />
                     <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px] -z-20" />
 
                     <div className="container mx-auto px-4 md:px-6 text-center">
                         <div className="flex flex-col items-center max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-8 duration-700">
 
-                            <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary mb-6 backdrop-blur-sm">
-                                <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
+                            <div className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm font-medium text-white/90 mb-6 backdrop-blur-sm">
+                                <span className="flex h-2 w-2 rounded-full bg-white mr-2 animate-pulse"></span>
                                 Expertise e Programas
                             </div>
 
@@ -165,7 +165,7 @@ export default function ServicesPage() {
                                 Nossas Soluções
                             </h1>
 
-                            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
+                            <p className="text-xl text-white/70 leading-relaxed max-w-2xl">
                                 Cada etapa da sua trajetória exige uma comunicação à altura da sua responsabilidade.
                             </p>
                         </div>

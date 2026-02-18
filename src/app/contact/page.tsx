@@ -23,7 +23,7 @@ export default function ContactPage() {
                         <div className="space-y-8 animate-in fade-in slide-in-from-left-8 duration-700">
                             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-muted/50 text-xs font-medium uppercase tracking-wider backdrop-blur-sm border border-border">
                                 <span className="w-2 h-2 rounded-full bg-[#C6A84A] animate-pulse" />
-                                <span>Aceitando Novos Clientes</span>
+                                <span>Pronto Para Ir Além?</span>
                             </div>
 
                             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight text-foreground">
@@ -31,21 +31,21 @@ export default function ContactPage() {
                             </h1>
 
                             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-                                Pronto para elevar sua comunicação? Arctic reduziu atrasos em projetos em 30% e transformou o alinhamento da equipe global. Vamos discutir seus objetivos.
+                                Qual seu momento atual? Qual seu próximo desafio? Conte-nos sobre sua jornada e saiba como podemos te apoiar neste processo!
                             </p>
 
                             <div className="space-y-4 pt-4">
                                 <div className="flex items-center space-x-3 text-foreground/80">
                                     <CheckCircle2 className="w-5 h-5 text-[#C6A84A]" />
-                                    <span>Estratégia de Coaching Executivo</span>
+                                    <span>Transição de Carreira</span>
                                 </div>
                                 <div className="flex items-center space-x-3 text-foreground/80">
                                     <CheckCircle2 className="w-5 h-5 text-[#C6A84A]" />
-                                    <span>Auditorias de Comunicação Corporativa</span>
+                                    <span>Business English</span>
                                 </div>
                                 <div className="flex items-center space-x-3 text-foreground/80">
-                                    <Mail className="w-5 h-5 text-[#C6A84A]" />
-                                    <span>contact@thaislapolla.com</span>
+                                    <CheckCircle2 className="w-5 h-5 text-[#C6A84A]" />
+                                    <span>Fluência e Influência</span>
                                 </div>
                             </div>
                         </div>

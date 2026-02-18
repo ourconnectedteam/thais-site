@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Linkedin } from "lucide-react";
+import { Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -22,7 +22,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link href="/services" className="text-sm text-foreground/80 hover:text-[#d4af37] transition-colors">
-                                    Serviços
+                                    Soluções
                                 </Link>
                             </li>
                             <li>
@@ -33,10 +33,10 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="text-sm font-semibold mb-4 uppercase tracking-wider text-muted-foreground">Conectar</h3>
+                        <h3 className="text-sm font-semibold mb-4 uppercase tracking-wider text-muted-foreground">Let&apos;s Get Connected</h3>
                         <div className="flex space-x-4 mb-4">
                             <a
-                                href="https://linkedin.com"
+                                href="https://www.linkedin.com/in/thaislapolla/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-[#d4af37] transition-colors"
@@ -44,10 +44,19 @@ export default function Footer() {
                                 <Linkedin className="h-5 w-5" />
                                 <span className="sr-only">LinkedIn</span>
                             </a>
+                            <a
+                                href="https://www.instagram.com/teacherthaislapolla/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-muted-foreground hover:text-[#d4af37] transition-colors"
+                            >
+                                <Instagram className="h-5 w-5" />
+                                <span className="sr-only">Instagram</span>
+                            </a>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                            <a href="mailto:contact@thaislapolla.com" className="hover:text-[#d4af37] transition-colors">
-                                contact@thaislapolla.com
+                            <a href="mailto:contato@thaislapolla.com" className="hover:text-[#d4af37] transition-colors">
+                                contato@thaislapolla.com
                             </a>
                         </p>
                     </div>

@@ -38,7 +38,7 @@ export default function AboutVisual() {
                         <p className="text-sm font-medium text-muted-foreground mb-4 leading-relaxed">
                             Faça parte da nossa comunidade de líderes influentes.
                         </p>
-                        <Button size="sm" className="w-full text-xs rounded-full bg-black text-white hover:bg-black/80 dark:bg-white dark:text-black">
+                        <Button size="sm" className="w-full text-xs rounded-full bg-primary text-white hover:bg-primary/80 dark:bg-white dark:text-primary">
                             Começar minha jornada
                         </Button>
                     </div>

@@ -48,7 +48,7 @@ export default function AboutPage() {
                                     {[
                                         { label: "Anos de Experiência", value: "30+" },
                                         { label: "Líderes Treinados", value: "1000+" },
-                                        { label: "Países Atendidos", value: "15" },
+                                        { label: "Países Atendidos", value: "5" },
                                         { label: "Soluções Customizadas", value: "100%" }
                                     ].map((stat, i) => (
                                         <div key={i} className="bg-card/50 backdrop-blur-sm p-8 flex flex-row items-center justify-between gap-4 hover:bg-card transition-colors duration-300 group">

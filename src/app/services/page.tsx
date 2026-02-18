@@ -161,12 +161,12 @@ export default function ServicesPage() {
                                 Expertise e Programas
                             </div>
 
-                            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 pb-2">
+                            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-gold pb-2">
                                 Nossas Soluções
                             </h1>
 
                             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                                Criamos estratégias de comunicação de classe mundial que elevam sua liderança e geram resultados. De coaching privado a workshops de equipe, trazemos clareza para a complexidade.
+                                Cada etapa da sua trajetória exige uma comunicação à altura da sua responsabilidade.
                             </p>
                         </div>
                     </div>

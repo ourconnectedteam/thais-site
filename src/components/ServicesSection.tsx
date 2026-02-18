@@ -5,22 +5,42 @@ export default function ServicesSection() {
     const services = [
         {
             title: "Transição de Carreira",
-            description: "Para líderes em movimento. Entrevista marcada ou não, preparação é antecipação estratégica. O inglês deve impulsionar sua próxima decisão, nunca limitar seu avanço.",
+            description: (
+                <>
+                    <p>Para líderes em movimento. Entrevista marcada ou não, preparação é antecipação estratégica.</p>
+                    <p className="mt-3">O inglês deve impulsionar sua próxima decisão, nunca limitar seu avanço.</p>
+                </>
+            ),
             icon: <Briefcase className="h-6 w-6" />,
         },
         {
             title: "Business English",
-            description: "Você opera em ambientes globais e não tem tempo a perder. Sua comunicação precisa refletir segurança, autoridade e clareza. Performance consistente não é opcional.",
+            description: (
+                <>
+                    <p>Você opera em ambientes globais e não tem tempo a perder. Sua comunicação precisa refletir segurança, autoridade e clareza.</p>
+                    <p className="mt-3">Performance consistente não é opcional.</p>
+                </>
+            ),
             icon: <Globe className="h-6 w-6" />,
         },
         {
             title: "Além da Fluência",
-            description: "Fluência é precisão sob pressão. Seja para ampliar repertório, desenvolver clareza no discurso ou refinar a pronúncia, a sua jornada começa aqui.",
+            description: (
+                <>
+                    <p>Fluência é precisão sob pressão.</p>
+                    <p className="mt-3">Seja para ampliar repertório, desenvolver clareza no discurso ou refinar a pronúncia, a sua jornada começa aqui.</p>
+                </>
+            ),
             icon: <Mic className="h-6 w-6" />,
         },
         {
             title: "What's Next?",
-            description: "Você quer ir mais longe. Desafios direcionados e programas estratégicos mantêm seu inglês vivo, relevante e alinhado à sua ambição profissional.",
+            description: (
+                <>
+                    <p>Você quer ir mais longe.</p>
+                    <p className="mt-3">Desafios direcionados e programas estratégicos mantêm seu inglês vivo, relevante e alinhado à sua ambição profissional.</p>
+                </>
+            ),
             icon: <Rocket className="h-6 w-6" />,
         },
     ];

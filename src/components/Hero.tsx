@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
@@ -26,14 +27,13 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="relative mx-auto lg:ml-auto w-full max-w-[500px] aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl animate-in fade-in slide-in-from-right-8 duration-1000 delay-200">
-                        {/* Placeholder for Portrait */}
-                        <div className="absolute inset-0 bg-muted/20 flex items-center justify-center">
-                            <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent" />
-                            <span className="text-muted-foreground font-medium">Espaço para Retrato</span>
-                        </div>
-                        {/* If user provides image later, replace the above div with:
-                 <Image src="/path.jpg" alt="Thais Lapolla" fill className="object-cover" />
-             */}
+                        <Image
+                            src="/homepage-photo.png"
+                            alt="Thais Lapolla"
+                            fill
+                            priority
+                            className="object-cover object-center"
+                        />
                     </div>
                 </div>
             </div>

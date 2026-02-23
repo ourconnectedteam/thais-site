@@ -1,10 +1,17 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({
+    subsets: ["latin"],
+    variable: "--font-playfair",
+    weight: ["700", "800", "900"],
+    style: ["normal", "italic"],
+});
 
 export default function TestLevelPage() {
     useEffect(() => {
@@ -14,77 +21,201 @@ export default function TestLevelPage() {
         };
     }, []);
 
-    // Solid black background to better match the mix-blend-screen
-    // Added 'dark' class to force Navbar and children to use Dark Mode thematic tokens (e.g. dark background) 
-    // regardless of system preference, since this page is always black.
     return (
-        <div className="flex h-screen flex-col overflow-hidden bg-black text-white dark">
-            <div className="relative z-50">
+        <div className={`${playfair.variable} flex h-screen flex-col overflow-hidden bg-white`}>
+
+            {/* Navbar */}
+            <div className="relative z-50 flex-shrink-0">
                 <Navbar />
             </div>
 
-            <main className="relative flex-1 w-full h-full">
+            {/* Split layout */}
+            <main className="flex flex-1 overflow-hidden">
 
-                {/* Container for content - Using absolute positioning for extreme corners */}
-                <div className="relative z-10 w-full h-full p-6 md:p-12 lg:p-16">
+                {/* ── LEFT PANEL ── */}
+                <div className="relative flex w-full flex-col justify-center overflow-y-auto px-8 py-10 md:w-[46%] lg:px-14 xl:px-20">
 
-                    {/* Top Left: Title */}
-                    <div className="absolute top-6 left-6 md:top-10 md:left-12 lg:top-12 lg:left-16 max-w-sm text-left animate-in fade-in slide-in-from-left-6 duration-700 z-20">
-                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white drop-shadow-xl leading-[1.0]">
-                            Teste Seu <br /> Nível de Inglês
-                        </h1>
-                    </div>
+                    {/* Gold top accent line */}
+                    <div
+                        className="absolute left-0 right-0 top-0 h-[2px]"
+                        style={{
+                            background:
+                                "linear-gradient(90deg, #6b4e16 0%, #d4af37 35%, #f5e6a8 58%, #d4af37 78%, transparent 100%)",
+                        }}
+                    />
 
-                    {/* Bottom Right: Subtitle + Button - Pushed further down */}
-                    <div className="absolute bottom-6 right-6 md:bottom-8 md:right-12 lg:bottom-10 lg:right-16 max-w-xs md:max-w-sm text-right flex flex-col items-end gap-6 animate-in fade-in slide-in-from-right-6 duration-700 delay-200 z-20">
-                        <p className="text-lg md:text-xl text-white/80 font-light leading-relaxed">
-                            Descubra seu nível atual de inglês em apenas alguns minutos e encontre o melhor caminho para sua jornada de aprendizado.
-                        </p>
-                        <div className="pt-2">
-                            <Button
-                                asChild
-                                className="rounded-full px-8 py-6 text-base font-semibold shadow-2xl shadow-primary/20 hover:scale-105 transition-transform duration-300"
+                    {/* Animated content block */}
+                    <div className="tl-reveal">
+
+                        {/* Eyebrow label */}
+                        <div className="mb-7 flex items-center gap-3">
+                            <div className="h-px w-8 flex-shrink-0" style={{ background: "#d4af37" }} />
+                            <p
+                                className="text-[10px] font-semibold uppercase tracking-[0.28em]"
+                                style={{ color: "#b8860b" }}
                             >
-                                <Link
-                                    href="https://forms.gle/miUKWGrDNPhUN4Ys8"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Iniciar o Teste
-                                </Link>
-                            </Button>
+                                Diagnóstico Gratuito
+                            </p>
                         </div>
+
+                        {/* Heading */}
+                        <h1
+                            className="mb-5 tracking-tight text-[#1F253C]"
+                            style={{
+                                fontFamily: "var(--font-playfair)",
+                                fontSize: "clamp(2.8rem, 4.5vw, 5.2rem)",
+                                fontWeight: 900,
+                                lineHeight: 1.02,
+                            }}
+                        >
+                            Teste Seu
+                            <br />
+                            <em
+                                style={{
+                                    fontStyle: "italic",
+                                    display: "inline-block",
+                                    paddingLeft: "0.15em",
+                                    marginLeft: "-0.15em",
+                                    paddingRight: "0.4em",
+                                    background:
+                                        "linear-gradient(100deg, #B8860B 0%, #d4af37 30%, #f5e6a8 55%, #d4af37 78%, #B8860B 100%)",
+                                    WebkitBackgroundClip: "text",
+                                    WebkitTextFillColor: "transparent",
+                                    backgroundClip: "text",
+                                }}
+                            >
+                                Nível
+                            </em>
+                            <br />
+                            de Inglês
+                        </h1>
+
+                        {/* Gold rule */}
+                        <div
+                            className="mb-6 h-px w-12"
+                            style={{
+                                background:
+                                    "linear-gradient(to right, #d4af37, transparent)",
+                            }}
+                        />
+
+                        {/* Body text */}
+                        <p
+                            className="mb-9 max-w-[320px] text-[15px] font-light leading-relaxed"
+                            style={{ color: "#1F253C", opacity: 0.6 }}
+                        >
+                            Descubra seu nível atual de inglês em apenas alguns
+                            minutos e encontre o melhor caminho para sua jornada de
+                            aprendizado.
+                        </p>
+
+                        {/* CTA */}
+                        <Link
+                            href="https://forms.gle/miUKWGrDNPhUN4Ys8"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="tl-cta"
+                        >
+                            <span>Iniciar o Teste</span>
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                                aria-hidden="true"
+                                className="tl-arrow"
+                            >
+                                <path
+                                    d="M3.5 9H14.5M14.5 9L9 3.5M14.5 9L9 14.5"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </Link>
                     </div>
 
-                    {/* 3D Object - Centered and Smaller */}
-                    {/* Added mask-[radial-gradient] to ensure edges fade out perfectly if colors mismatch slightly */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 w-[80vw] md:w-[45vw] max-w-[650px] aspect-square flex items-center justify-center opacity-100 pointer-events-none mix-blend-screen [mask-image:radial-gradient(closest-side,black_60%,transparent_100%)]">
-                        {/* Reverted to original Float Animation */}
-                        <div className="relative w-full h-full animate-float-slow">
-                            <Image
-                                src="/3d-book.png"
-                                alt="English Level Test"
-                                fill
-                                className="object-contain drop-shadow-2xl"
-                                priority
-                            />
-                        </div>
-                    </div>
+                    {/* Watermark */}
+                    <p
+                        className="absolute bottom-6 left-8 text-[9px] font-medium uppercase tracking-[0.22em] lg:left-14 xl:left-20"
+                        style={{ color: "#1F253C", opacity: 0.18 }}
+                    >
+                        Thais Lapolla · Executive English Coach
+                    </p>
+                </div>
 
+                {/* ── RIGHT PANEL ── Photo */}
+                <div className="relative hidden overflow-hidden md:block md:w-[54%]">
+                    {/* Soft left-edge fade to blend with white panel */}
+                    <div
+                        className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24"
+                        style={{
+                            background:
+                                "linear-gradient(to right, #ffffff 0%, transparent 100%)",
+                        }}
+                    />
+                    <Image
+                        src="/Teste seu ingles.jpg"
+                        alt="Thais Lapolla — Teste Seu Nível de Inglês"
+                        fill
+                        className="object-cover"
+                        style={{ objectPosition: "50% 22%" }}
+                        priority
+                    />
                 </div>
 
             </main>
 
-            {/* Reverted Float Animation */}
             <style jsx global>{`
-        @keyframes float-slow {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-25px); }
-        }
-        .animate-float-slow {
-          animation: float-slow 6s ease-in-out infinite;
-        }
-      `}</style>
+                @keyframes tl-reveal {
+                    from {
+                        opacity: 0;
+                        transform: translateY(24px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                .tl-reveal {
+                    animation: tl-reveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both;
+                }
+
+                .tl-cta {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 14px 28px;
+                    background: #1f253c;
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 700;
+                    letter-spacing: 0.14em;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    border-radius: 2px;
+                    border: 1px solid #1f253c;
+                    transition: background 0.26s ease, color 0.26s ease,
+                        box-shadow 0.26s ease;
+                }
+
+                .tl-cta:hover {
+                    background: #d4af37;
+                    color: #1f253c;
+                    border-color: #d4af37;
+                    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.32);
+                }
+
+                .tl-arrow {
+                    transition: transform 0.26s ease;
+                }
+
+                .tl-cta:hover .tl-arrow {
+                    transform: translateX(4px);
+                }
+            `}</style>
         </div>
     );
 }

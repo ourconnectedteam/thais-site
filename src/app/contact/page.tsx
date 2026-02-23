@@ -23,7 +23,7 @@ export default function ContactPage() {
                         <div className="space-y-8 animate-in fade-in slide-in-from-left-8 duration-700">
                             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-muted/50 text-xs font-medium uppercase tracking-wider backdrop-blur-sm border border-border">
                                 <span className="w-2 h-2 rounded-full bg-[#C6A84A] animate-pulse" />
-                                <span>Pronto Para Ir Além?</span>
+                                <span>Pronto Para Ir Mais Longe?</span>
                             </div>
 
                             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight text-foreground">

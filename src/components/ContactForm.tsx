@@ -78,7 +78,7 @@ export default function ContactForm() {
                             <FormLabel>Mensagem</FormLabel>
                             <FormControl>
                                 <Textarea
-                                    placeholder="Conte-me sobre suas necessidades de coaching..."
+                                    placeholder="Como podemos ajudar?"
                                     className="min-h-[120px]"
                                     {...field}
                                 />

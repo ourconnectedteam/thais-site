@@ -4,23 +4,41 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 export default function TestimonialsSection() {
     const testimonials = [
         {
-            quote: "A Thais transformou completamente como me apresento ao conselho. Sinto-me no controle e compreendida.",
-            author: "Sofia M.",
-            role: "VP de Operações, FinTech",
-            initials: "SM"
+            quote: "A Thais superou expectativas ao criar um curso totalmente customizado para o Google. O progresso foi claro e reconhecido globalmente pela liderança.",
+            author: "Maria Emilia Azevedo",
+            role: "Diretora de RH no Google",
+            initials: "MA"
         },
         {
-            quote: "A nuance que ela ensina era o que faltava no meu inglês. Não é apenas sobre estar correto; é sobre ser eficaz.",
-            author: "Carlos R.",
-            role: "Fundador, Startup de Tecnologia",
-            initials: "CR"
+            quote: "Extremamente focada, competente e consistente na entrega de resultados. Uma parceira estratégica que recomendo sem hesitar.",
+            author: "Renata Fabrini",
+            role: "Sócia na Plongê",
+            initials: "RF"
         },
         {
-            quote: "O coaching dela me deu confiança para liderar negociações internacionais sem duvidar das minhas palavras.",
-            author: "Elena B.",
-            role: "Diretora de Vendas, Varejo",
-            initials: "EB"
-        }
+            quote: "Não foi apenas um curso de inglês. Foi preparação estratégica. Ganhei organização, fluência e confiança para arrasar na minha apresentação.",
+            author: "Elizabeth Auricchio",
+            role: "GreenTech Brasil",
+            initials: "EA"
+        },
+        {
+            quote: "Aulas além do inglês tradicional. Foco em pronúncia, contexto e comunicação corporativa com precisão e profundidade.",
+            author: "Fabio Santana",
+            role: "Sócio no Cury Santa Kubric Associados",
+            initials: "FS"
+        },
+        {
+            quote: "Metodologia estratégica, foco em precisão e evolução real na comunicação. Um investimento que vale cada centavo.",
+            author: "Leandro Viaceli",
+            role: "Diretor de Vendas na Clear Correct",
+            initials: "LV"
+        },
+        {
+            quote: "Criativa, orientada a resultados e profundamente comprometida com as necessidades do cliente. Recomendo sem ressalvas.",
+            author: "Daniella Holl",
+            role: "HR Director LATAM & Caribe na Prada",
+            initials: "DH"
+        },
     ];
 
     return (

@@ -6,10 +6,10 @@ export default function AboutVisual() {
     return (
         <section className="relative w-full overflow-hidden bg-background">
             {/* Visual Header Block - Full Width */}
-            <div className="relative w-full aspect-[21/9] lg:aspect-[2.5/1] min-h-[500px]">
+            <div className="relative w-full aspect-[21/9] lg:aspect-[2.5/1] min-h-[600px]">
                 {/* Background Image */}
                 <div className="absolute inset-0">
-                    <Image src="/aboutme-photo.png" fill className="object-cover object-top" alt="Thais Lapolla" priority />
+                    <Image src="/About me (2).png" fill className="object-cover object-bottom scale-[1.18] origin-bottom" alt="Thais Lapolla" priority />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/10" />
                 </div>
 

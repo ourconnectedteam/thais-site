@@ -25,14 +25,14 @@ export default function AboutPage() {
                             {/* Bio Content - Spans 7 cols */}
                             <div className="lg:col-span-7">
                                 <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8 leading-tight">
-                                    Líderes não se destacam pelo que sabem. E sim, por <span className="text-gold">como se comunicam</span>.
+                                    Líderes não se destacam pelo que sabem. E sim, por <span className="whitespace-nowrap"><span className="text-gold">como se comunicam</span>.</span>
                                 </h2>
                                 <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                                     <p>
                                         A forma como você comunica define o alcance da sua <span className="text-foreground font-medium">liderança</span>. <span className="text-foreground font-medium">Thais Lapolla</span> é especialista em inglês estratégico para executivos que atuam em esferas globais. Há mais de três décadas, <span className="text-gold font-medium">transforma fluência em influência real</span>, alinhando linguagem, posicionamento e responsabilidade em ambientes de alta complexidade. Fluente em cinco idiomas, já viveu em três países e construiu sua trajetória unindo <span className="text-foreground font-medium">expertise em idiomas à experiência prática em multinacionais americanas</span>, consolidando inteligência intercultural e a capacidade de transitar com naturalidade entre diferentes contextos e níveis de decisão.
                                     </p>
                                     <p>
-                                        Sua abordagem precisa transforma <span className="text-foreground font-medium">líderes</span> em <span className="text-foreground font-medium">comunicadores estratégicos</span>, capazes de influenciar com <span className="text-foreground font-medium">precisão e autoridade</span>. Thais acredita que comunicação não é sobre talento, e sim sobre <span className="text-gold font-medium">estratégia</span>. E que, com a orientação certa, qualquer profissional pode ir além. <span className="text-foreground font-medium">É exatamente para isso que ela está aqui.</span>
+                                        Sua abordagem precisa transforma <span className="text-foreground font-medium">líderes</span> em <span className="text-foreground font-medium">comunicadores estratégicos</span>, capazes de influenciar com <span className="text-foreground font-medium">precisão e autoridade</span>. Thais acredita que comunicação não é sobre talento, e sim sobre <span className="whitespace-nowrap"><span className="text-gold font-medium">estratégia</span>.</span> E que, com a orientação certa, qualquer profissional pode ir além. <span className="text-foreground font-medium">É exatamente para isso que ela está aqui.</span>
                                     </p>
                                 </div>
                                 <div className="mt-10">

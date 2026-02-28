@@ -21,7 +21,7 @@ export default function AboutVisual() {
                                 <span className="text-gold whitespace-nowrap">Empoderando líderes</span> <br />
                                 para transformar <br />
                                 fluência em <br />
-                                <span className="text-gold">influência</span>.
+                                <span className="whitespace-nowrap"><span className="text-gold">influência</span>.</span>
                             </p>
                         </div>
 

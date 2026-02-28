@@ -30,9 +30,9 @@ export default function TestLevelPage() {
             </div>
 
             {/* Split layout */}
-            <main className="flex flex-1 overflow-hidden">
+            <main className="flex flex-1 flex-row-reverse overflow-hidden">
 
-                {/* ── LEFT PANEL ── */}
+                {/* ── INFO PANEL (Right) ── */}
                 <div className="relative flex w-full flex-col justify-center overflow-y-auto px-8 py-10 md:w-[46%] lg:px-14 xl:px-20">
 
                     {/* Gold top accent line */}
@@ -145,18 +145,18 @@ export default function TestLevelPage() {
                     </p>
                 </div>
 
-                {/* ── RIGHT PANEL ── Photo */}
+                {/* ── PHOTO PANEL (Left) ── */}
                 <div className="relative hidden overflow-hidden md:block md:w-[54%]">
-                    {/* Soft left-edge fade to blend with white panel */}
+                    {/* Soft right-edge fade to blend with white panel */}
                     <div
-                        className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24"
+                        className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24"
                         style={{
                             background:
-                                "linear-gradient(to right, #ffffff 0%, transparent 100%)",
+                                "linear-gradient(to left, #ffffff 0%, transparent 100%)",
                         }}
                     />
                     <Image
-                        src="/Teste seu ingles.jpg"
+                        src="/teste-seu-ingles-novo.jpg"
                         alt="Thais Lapolla — Teste Seu Nível de Inglês"
                         fill
                         className="object-cover"

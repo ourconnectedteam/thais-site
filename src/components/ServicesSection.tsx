@@ -50,7 +50,7 @@ export default function ServicesSection() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-20 space-y-8 max-w-4xl mx-auto">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-foreground">
-                        Para cada demanda, uma <span className="text-gold">solução</span>.
+                        Para cada demanda, uma <span className="whitespace-nowrap"><span className="text-gold">solução</span>.</span>
                     </h2>
 
                     <p className="text-lg text-muted-foreground leading-relaxed text-left md:text-center max-w-3xl mx-auto">

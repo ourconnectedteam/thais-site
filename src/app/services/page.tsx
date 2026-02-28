@@ -40,7 +40,7 @@ const serviceCategories: ServiceCategory[] = [
                 ctaLabel: "Agendar Agora",
                 href: "https://thaislapolla.kpages.online/entrevista-em-ingles-curso-preparatorio-job-interview-e2ac934e-c711-4828-bcb7-70a9bb405265",
                 imageColor: "bg-purple-500/10",
-                image: "/Preparatório Para Entrevista em Inglês.png",
+                image: "/Preparatorio Para Entrevista em Ingles.jpg",
             },
             {
                 id: "cv-translation",
@@ -49,7 +49,7 @@ const serviceCategories: ServiceCategory[] = [
                 ctaLabel: "Obter Orçamento",
                 href: "/contact?service=cv-translation",
                 imageColor: "bg-rose-500/10",
-                image: "/Tradução de CV.png",
+                image: "/Traducao de CV.jpg",
             },
             {
                 id: "personal-coaching",
@@ -92,7 +92,7 @@ const serviceCategories: ServiceCategory[] = [
                 ctaLabel: "Iniciar Jornada",
                 href: "/contact?service=private-classes",
                 imageColor: "bg-amber-500/10",
-                image: "/Aulas Particulares.png",
+                image: "/Aulas Particulares.jpg",
             },
         ],
     },

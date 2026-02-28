@@ -10,8 +10,8 @@ export default function Hero() {
                     <div className="flex flex-col justify-center space-y-8 animate-in fade-in slide-in-from-bottom-6 duration-1000">
                         <div className="space-y-4">
                             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-7xl/none text-foreground">
-                                Comunique-se com <span className="text-gold">intenção</span>. <br />
-                                Lidere com <span className="text-gold">autoridade</span>.
+                                Comunique-se com <span className="whitespace-nowrap"><span className="text-gold">intenção</span>.</span> <br />
+                                Lidere com <span className="whitespace-nowrap"><span className="text-gold">autoridade</span>.</span>
                             </h1>
                             <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl leading-relaxed">
                                 Inglês estratégico para líderes
